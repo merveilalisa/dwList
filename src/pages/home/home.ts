@@ -9,10 +9,14 @@ import {DataProvider} from "../../providers/data/data";
 export class HomePage {
 
   items = {};
+  itemstwo = {}
 
   constructor(public navCtrl: NavController, public dataService: DataProvider) {
     this.items = dataService.getData();
       console.log(this.items);
+
+    this.itemstwo = dataService.getDatatwo();
+
   }
 
 }

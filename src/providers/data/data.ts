@@ -11,11 +11,23 @@ import 'rxjs/add/operator/map';
 export class DataProvider {
 
   mydata = { "ListItems": [
-    {listName: "cookies"},
-    {listName: "cake"},
-    {listName: "chips"},
-    {listName: "oreos"}]
+    {listName: "The Snake Hunter"},
+    {listName: "Killer"},
+    {listName: "Let Me Live"},
+    {listName: "21 Guns"}],
+
+    "ListItemsTwo": [
+      {listNameTwo: "Love Me Tender"},
+      {listNameTwo: "The Pretender"},
+      {listNameTwo: "Kissing"},
+      {listNameTwo: "In the Moonlight"}]
+
+
   };
+
+
+
+
 
   constructor() {
     console.log('Hello DataProvider Provider');
@@ -23,6 +35,16 @@ export class DataProvider {
 
   getData(): Object {
     return this.mydata.ListItems;
+
+
+
+  };
+
+  getDatatwo(): Object {
+    return this.mydata.ListItemsTwo;
+
+
+
   };
 
 }

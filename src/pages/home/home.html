@@ -1,7 +1,7 @@
 <ion-header>
   <ion-navbar>
     <ion-title>
-      Ionic Blank
+      Movie List
     </ion-title>
   </ion-navbar>
 </ion-header>
@@ -9,8 +9,17 @@
 <ion-content padding>
 
   <ion-list>
+    <ion-list-header>
+      Adventure
+    </ion-list-header>
     <ion-item *ngFor="let item of items">
       {{item.listName}}
+    </ion-item>
+    <ion-list-header>
+      Romance
+    </ion-list-header>
+    <ion-item *ngFor="let item of itemstwo">
+      {{item.listNameTwo}}
     </ion-item>
   </ion-list>
 
